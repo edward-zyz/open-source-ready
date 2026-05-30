@@ -1,0 +1,27 @@
+# .github/dependabot.yml — keep dependencies & GitHub Actions up to date.
+# Uncomment the block(s) matching this repo's stack; delete the rest.
+version: 2
+updates:
+  # GitHub Actions used in workflows (always recommended once you have CI)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Node / npm
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+
+  # Python (pip / pyproject)
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+
+  # Go modules
+  # - package-ecosystem: "gomod"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"

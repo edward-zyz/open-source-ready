@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source Ready"
+  short_description: "Prepare private repos for polished open source release"
+  default_prompt: "Use $open-source-ready to assess this repo and prepare a plan-first GitHub open-source release."

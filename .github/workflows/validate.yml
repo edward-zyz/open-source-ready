@@ -1,0 +1,21 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - name: Validate skill metadata
+        run: python3 .github/scripts/validate_skill.py .
+      - name: Check shell syntax
+        run: bash -n scripts/assess.sh
+      - name: Smoke test assessment script
+        run: bash scripts/assess.sh /tmp

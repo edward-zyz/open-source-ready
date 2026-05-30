@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement for Open Source Ready
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What open-source release workflow problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or resource you want added.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety considerations
+      description: Does this touch secrets, git history, publishing, or branch protection?
+    validations:
+      required: false
